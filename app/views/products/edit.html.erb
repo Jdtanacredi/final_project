@@ -1,0 +1,24 @@
+<% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> stopped this line_item from being saved:</h2>
+
+      <ul>
+        <% @product.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
+
+<%= form_for @product do |f| %>
+    <%= f.label :title %>
+        <%= f.text_field :title %>
+    <%= f.label :description %>
+        <%= f.text_field :description %>
+    <%= f.label :image_url %>
+        <%= f.text_field :image_url %>
+    <%= f.label :price %>
+        <%=	f.text_field :price %>
+    <%= f.submit %>
+    <%= link_to 'Show', @product %>
+<% end %>
