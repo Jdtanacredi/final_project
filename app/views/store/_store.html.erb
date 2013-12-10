@@ -6,7 +6,7 @@
       <div class="price_line">
         <span class="price"><%= sprintf("$%0.02f", product.price) %></span>
         <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
-        <%= link_to 'Product Details'%>
+        <%= link_to 'Product Details', store_path(:id) %>
       </div>
     </div>
 <% end %>

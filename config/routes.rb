@@ -10,6 +10,7 @@ FinalProject::Application.routes.draw do
   resources :products, only: [:index, :new, :create, :show, :edit, :update]
   resources :line_items, only: [:index, :new, :create, :show, :edit, :update]
   resources :carts, only: [:index, :new, :create, :show, :edit, :update]
+  resources :store, only: [:index, :show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
