@@ -5,6 +5,6 @@ class AdminsController < ApplicationController
     #binding.pry
     unless current_user.admin?
       redirect_to store_path
-  end
+    end
   end
 end
