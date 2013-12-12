@@ -1,0 +1,10 @@
+<h1><%= @product.title %></h1>
+
+<p> <%= @product.image_url %> </p>
+
+<p><%= @product.description %></p>
+
+<p> <%= @product.price %> </p>
+
+<%= link_to 'Edit', edit_product_path(@product) %>
+<%= link_to 'Home', products_path %>

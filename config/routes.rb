@@ -1,13 +1,17 @@
 FinalProject::Application.routes.draw do
-  root 'store#index', as: 'store'
-  #get "specific_items/index"
+  root 'store#index'#, as: 'store'
+
   #get "line_items/index"
   #get "carts/:id", to: 'carts#show'
   #get "products/index"
 
   devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout'}
 
-  resources :products, only: [:index, :new, :create, :show, :edit, :update]
+  namespace :admin do
+    resources :products
+  end
+
+  resources :products, only: [:index]
   resources :line_items, only: [:index, :new, :create, :show, :edit, :update]
   resources :carts, only: [:index, :new, :create, :show, :edit, :update]
   resources :store, only: [:index, :show]

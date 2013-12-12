@@ -4,7 +4,8 @@ class AdminsController < ApplicationController
   def is_admin?
     #binding.pry
     unless current_user.admin?
-      redirect_to store_path
+      redirect_to root_path
     end
   end
+
 end
