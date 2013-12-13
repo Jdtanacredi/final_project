@@ -1,12 +1,18 @@
 class CartsController < ApplicationController
-  before_action :find_cart, only: [:edit, :show, :update, :destroy]
+  #before_action :find_cart, only: [:edit, :show, :update, :destroy]
 
   def index
     @carts = Cart.all
   end
 
   def show
-    #@cart = Cart.find(params[:id])
+    begin
+      @cart = Cart.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      logger.error "Attempt to access invalid cart #{params[:id]}"
+      redirect_to root_path, notice: 'Invalid cart'
+    else
+    end
   end
 
   def new
@@ -14,7 +20,7 @@ class CartsController < ApplicationController
   end
 
   def edit
-    #@cart = Cart.find(params[:id])
+    @cart = Cart.find(params[:id])
   end
 
   def create
@@ -38,8 +44,11 @@ class CartsController < ApplicationController
   end
 
   def destroy
-   # @cart = Cart.find(params[:id])
+   @cart = Cart.find(params[:id])
     @cart.destroy
+    session[:cart_id] = nil
+    redirect_to root_url
+
   end
 
 end
