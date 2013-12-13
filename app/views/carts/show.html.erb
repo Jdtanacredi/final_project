@@ -3,6 +3,11 @@
   <% @cart.line_items.each do |item| %>
     <p><%= item.quantity %> &times; <%= item.product.title %></p>
   <% end %>
-
-  <%= link_to 'Home', root_path %>
 </div>
+
+      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+            data-description="A month's subscription"   <!--THIS WOULD BE -->
+            data-amount="500"></script>
+
+<%= link_to 'Home', root_path %>
