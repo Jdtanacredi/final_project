@@ -2,9 +2,12 @@
 <div>
   <% @cart.line_items.each do |item| %>
     <p><%= item.quantity %> &times; <%= item.product.title %></p>
+      <p><%= number_to_currency(item.total_price_of_product) %></p>
   <% end %>
 </div>
-
+<div>
+  <%= number_to_currency(@cart.total_price_for_cart) %>
+</div>
       <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
             data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
             data-description="A month's subscription" <!--EX: @product.name-->
