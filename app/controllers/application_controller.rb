@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :current_or_guest_user
 
-  #NEW CODE--------------------------
+  #NEW CODE--------------------------------------------------
   def current_or_guest_user
     if current_user
       if session[:guest_user_id]
@@ -17,7 +17,6 @@ class ApplicationController < ActionController::Base
       guest_user
     end
   end
-
   # find guest_user object associated with the current session,
   def guest_user
     # Cache the value the first time
@@ -26,7 +25,7 @@ class ApplicationController < ActionController::Base
     session[:guest_user_id] = nil
     guest_user
   end
-#END NEW CODE---------------------
+#END NEW CODE---------------------------------------------
 
   private
 
@@ -38,7 +37,7 @@ class ApplicationController < ActionController::Base
     cart
   end
 
-#NEW CODE-------------------------------
+#NEW CODE-------------------------------------------------------
   # called (once) when the user logs in, insert any code your application needs
   # to hand off from guest_user to current_user.
   def logging_in
@@ -47,7 +46,6 @@ class ApplicationController < ActionController::Base
     # guest_comments.each do |comment|
     # comment.user_id = current_user.id
     # comment.save!
-    # end
   end
 
   def create_guest_user
@@ -56,7 +54,7 @@ class ApplicationController < ActionController::Base
     session[:guest_user_id] = u.id
     u
   end
-#END NEW CODE----------------------------
+#END NEW CODE----------------------------------------------------
 
 
 end
