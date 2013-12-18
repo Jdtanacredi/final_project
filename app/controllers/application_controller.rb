@@ -46,6 +46,7 @@ class ApplicationController < ActionController::Base
     # guest_comments.each do |comment|
     # comment.user_id = current_user.id
     # comment.save!
+    current_cart.save!
   end
 
   def create_guest_user

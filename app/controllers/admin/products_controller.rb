@@ -32,6 +32,12 @@ class Admin::ProductsController < AdminsController
     @product.destroy
   end
 
+  #def expired?
+  #  hide_product = @product.created_at + 2.days
+  #  Time.now < hide_product
+  #end
+  #helper_method :expired?
+
   private
 
   def safe_product

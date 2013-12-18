@@ -8,17 +8,16 @@ class LineItem < ActiveRecord::Base
 
 
 #COUNTS NUMBER OF SPECIFIC ITEMS PURCHASED. REDUCES PRICE IF PARAM MET
-  def total_spec_products_purchased
+  def discount?
     @forty = product.price - (product.price * 0.40)
     @thirty = product.price - (product.price * 0.30)
     @twenty = product.price - (product.price * 0.20)
 
-
     #FIGURE OUT!
-    line_item = LineItem.find(params[:id])
+    line_item = self.find(params[:id])
       if line_item.count > 30
         product.price = @forty
-      elsif
+      else
         line_item.count < 10
         product.price
       end

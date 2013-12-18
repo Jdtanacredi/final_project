@@ -12,7 +12,7 @@ FinalProject::Application.routes.draw do
   end
 
   resources :products, only: [:index, :show]
-  resources :line_items, only: [:index, :new, :create, :show, :edit, :update]
+  resources :line_items, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   resources :carts, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   resources :store, only: [:index, :show]
   resources :charges, only: [:new, :create]

@@ -1,11 +1,13 @@
 <% @products.each do |product| %>
-    <div class="entry">
-      <%= image_tag product.image_url %>
-      <h3><%= product.title %></h3>
-      <p><%= sanitize product.description %></p>
-      <div class="price_line">
-        <span class="price"><%= sprintf("$%0.02f", product.price) %></span>
-        <%= link_to 'Product Details', store_path(product) %>
-      </div>
-    </div>
+    <% unless product.expired? %>
+        <div class="entry">
+          <%= image_tag product.image_url %>
+          <h3><%= product.title %></h3>
+          <p><%= sanitize product.description %></p>
+          <div class="price_line">
+            <span class="price"><%= sprintf("$%0.02f", product.price) %></span>
+            <%= link_to 'Product Details', store_path(product) %>
+          </div>
+        </div>
+    <% end %>
 <% end %>

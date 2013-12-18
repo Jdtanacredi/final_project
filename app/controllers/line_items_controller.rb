@@ -41,6 +41,6 @@ class LineItemsController < ApplicationController
     @line_item = LineItem.find(params[:id])
     @line_item.destroy
 
-    redirect_to line_items_url
+    redirect_to line_items_path
   end
 end
