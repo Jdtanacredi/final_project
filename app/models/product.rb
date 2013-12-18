@@ -1,7 +1,7 @@
 class Product < ActiveRecord::Base
-  has_many :line_items
+  #has_many :line_items
 
-  before_destroy :not_ref_by_line_item
+  #before_destroy :not_ref_by_line_item
 
   def expired?
     hide_product = self.created_at + 30.days
@@ -19,14 +19,14 @@ class Product < ActiveRecord::Base
   end
 
 
-  private
-
-  def not_ref_by_line_item
-    if line_items.empty?
-       true
-    else
-      errors.add(:base, 'Line Items present')
-      false
-    end
-  end
+  #private
+  #
+  #def not_ref_by_line_item
+  #  if line_items.empty?
+  #     true
+  #  else
+  #    errors.add(:base, 'Line Items present')
+  #    false
+  #  end
+  #end
 end

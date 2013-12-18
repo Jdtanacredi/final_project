@@ -1,10 +1,10 @@
 class LineItem < ActiveRecord::Base
-  belongs_to :product
-  belongs_to :cart
-
-  def total_price_of_product
-    product.price * quantity
-  end
+  #belongs_to :product
+  #belongs_to :cart
+  #
+  #def total_price_of_product
+  #  product.price * quantity
+  #end
 
 
 #COUNTS NUMBER OF SPECIFIC ITEMS PURCHASED. REDUCES PRICE IF PARAM MET
