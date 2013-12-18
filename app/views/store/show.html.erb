@@ -6,4 +6,9 @@
 
 <p> <%= @product.price %> </p>
 
+<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+        data-description="Your Total Payment"
+        data-amount=<%= @total %>> </script>
+
 <%= button_to 'Add to Cart', line_items_path(product_id: @product) %>
