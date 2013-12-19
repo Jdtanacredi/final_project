@@ -8,7 +8,9 @@
 <!--Can add more fields to stripe-script -->
 <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-        data-description="Your Total Payment"
-        data-amount=<%= @total * @quantity %>> </script>
+        data-name="<%= @product.title %>"
+        data-description="<%= @product.description %>"
+        data-label="Claim"
+        data-amount=<%= @product.price * 100 %>></script>
 
 <%= button_to 'Add to Cart', line_items_path(product_id: @product) %>
