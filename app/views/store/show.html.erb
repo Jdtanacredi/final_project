@@ -11,6 +11,7 @@
         data-name="<%= @product.title %>"
         data-description="<%= @product.description %>"
         data-label="Claim"
+        data-shipping-address="Enter shipping address here."
         data-amount=<%= @product.price * 100 %>></script>
 
 <%= button_to 'Add to Cart', line_items_path(product_id: @product) %>

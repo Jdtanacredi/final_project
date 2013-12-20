@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 gem 'devise', '~> 3.2.2'
-
+gem "simple_form", "~> 3.0.1"
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
