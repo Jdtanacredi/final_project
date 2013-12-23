@@ -4,11 +4,12 @@ FinalProject::Application.routes.draw do
   #get "line_items/index"
   #get "carts/:id", to: 'carts#show'
   #get "products/index"
-  
+  #get "admin/products"
   devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout'}
-
+  #get "admin/products#index"
   namespace :admin do
     resources :products
+    resources :skus
   end
 
 
