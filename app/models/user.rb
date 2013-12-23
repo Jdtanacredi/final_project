@@ -7,4 +7,8 @@ class User < ActiveRecord::Base
   def admin?
     admin == true
   end
+
+  #def claimed?
+  #User.update_attribute(:customer_id, customer.id)
+  #end
 end

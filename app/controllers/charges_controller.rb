@@ -5,7 +5,7 @@ class ChargesController < ApplicationController
 
   def create
     # Amount in cents
-    @amount = 500
+    @amount = product.price * 100
 
     customer = Stripe::Customer.create(
         :email => 'example@stripe.com',
@@ -26,7 +26,7 @@ class ChargesController < ApplicationController
 
   def charge
     Stripe::Charge.create(
-        :amount   => @amount # or whatever the amount will be, discounted or not
+        :amount   => @amount, # or whatever the amount will be, discounted or not
         :currency => "usd",
         :customer => current_user.customer_id
     # or if this is done without a current_user, you could loop over all the users who bought the product
