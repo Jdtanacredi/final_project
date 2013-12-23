@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/products/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/skus/index.html.erb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/admins/products/index.html.erb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/admins/products/_products.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/products/_products.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/admins/products/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/products/edit.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/admins/products/new.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/products/new.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/admins/products/show.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/products/show.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/admins/skus/index.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/skus/_skus.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/skus_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/skus_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/skus/_skus.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/skus/_skus.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/charges_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/charges_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/sku.rb" afterPath="$PROJECT_DIR$/app/models/sku.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="final_project.iws" />
@@ -61,7 +54,9 @@
     <file path="/20131220003435_create_skus.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1387503803193" ignored="false" />
     <file path="/stripe.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1387514756975" ignored="false" />
     <file path="/skus_controller.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1387755908233" ignored="false" />
-    <file path="/_skus.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1387756724132" ignored="false" />
+    <file path="/_skus.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1387761663630" ignored="false" />
+    <file path="/sku.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1387761952804" ignored="false" />
+    <file path="/20131223025241_add_customer_id_to_users.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1387767371859" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,10 +101,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_skus.html.erb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="_skus.html.erb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/admin/skus/_skus.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="4" selection-start="105" selection-end="105" vertical-scroll-proportion="0.22883295">
+                <state line="9" column="9" selection-start="250" selection-end="250" vertical-scroll-proportion="-6.923077">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="charges_controller.rb" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/controllers/charges_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="23" column="28" selection-start="588" selection-end="588" vertical-scroll-proportion="0.28103045">
                   <folding />
                 </state>
               </provider>
@@ -124,14 +128,32 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="sku.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/models/sku.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="3" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="_products.html.erb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="_products.html.erb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/admin/products/_products.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="27" selection-start="176" selection-end="176" vertical-scroll-proportion="0.18518518">
+                <state line="3" column="26" selection-start="148" selection-end="148" vertical-scroll-proportion="-2.3076923">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="20131223025241_add_customer_id_to_users.rb" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/db/migrate/20131223025241_add_customer_id_to_users.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="5" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.22988506">
                   <folding />
                 </state>
               </provider>
@@ -176,9 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/line_item.rb" />
-        <option value="$PROJECT_DIR$/app/models/product.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/carts_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/line_items_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131220003435_create_skus.rb" />
         <option value="$PROJECT_DIR$/app/views/store/show.html.erb" />
@@ -192,6 +211,9 @@
         <option value="$PROJECT_DIR$/app/views/admin/skus/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/skus_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/skus/_skus.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/sku.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/charges_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131223025241_add_customer_id_to_users.rb" />
       </list>
     </option>
   </component>
@@ -244,6 +266,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="final_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="final_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="final_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="final_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="final_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -800,27 +854,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/line_item.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/sku.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="34" selection-end="34" vertical-scroll-proportion="0.030721966">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/product.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="372" selection-end="372" vertical-scroll-proportion="0.41401273">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/routing/mapper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1350" column="12" selection-start="47879" selection-end="47879" vertical-scroll-proportion="0.33333334">
@@ -891,6 +924,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/skus/_skus.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="9" selection-start="250" selection-end="250" vertical-scroll-proportion="-6.923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/skus_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
@@ -898,16 +938,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/products/_products.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/sku.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="176" selection-end="176" vertical-scroll-proportion="0.18518518">
+        <state line="3" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/skus/_skus.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/charges_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="105" selection-end="105" vertical-scroll-proportion="0.22883295">
+        <state line="23" column="28" selection-start="588" selection-end="588" vertical-scroll-proportion="0.28103045">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/products/_products.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="26" selection-start="148" selection-end="148" vertical-scroll-proportion="-2.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131223025241_add_customer_id_to_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.22988506">
           <folding />
         </state>
       </provider>

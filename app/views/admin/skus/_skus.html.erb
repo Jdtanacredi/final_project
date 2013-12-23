@@ -1,9 +1,9 @@
 <% @skus.each do |sku| %>
   <div>
     <%= sku.sku_number %>
+    <%= sku.product.title %>
     <%= sku.size %>
     <%= sku.color %>
-    
     <%= link_to 'Edit', edit_admin_sku_path(sku) %>
     <%= link_to 'Destroy', admin_sku_path(sku) %>
   </div>
