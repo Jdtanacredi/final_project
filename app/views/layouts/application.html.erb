@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>FinalProject</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -21,7 +22,23 @@
     <p class="alert"><%= alert %></p>
 <% end %>
 
-<%= yield %>
+<div class="container">
+  <header class="row">
+    <nav class="navbar navbar-pills">
+      <div class="navbar-header">
+        <%= link_to 'Company Title!', root_path, class: 'navbar-brand' %>
+      </div>
+
+      <ul class="nav navbar-nav">
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%=  %></li>
+        <li><%=  %></li>
+      </ul>
+
+    </nav>
+  </header>
+    <%= yield %>
+</div>
 
 </body>
 </html>
