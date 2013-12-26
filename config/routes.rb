@@ -10,6 +10,7 @@ FinalProject::Application.routes.draw do
     resources :products
     resources :skus
     resources :dashboards, only: [:show, :index]
+    resources :users, only: [:index]
   end
 
 

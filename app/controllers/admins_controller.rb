@@ -3,7 +3,7 @@ class AdminsController < ApplicationController
 
   def is_admin?
     #binding.pry
-    unless current_user.admin?
+    unless current_or_guest_user.admin?
       redirect_to root_path
     end
   end
