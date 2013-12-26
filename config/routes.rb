@@ -9,7 +9,7 @@ FinalProject::Application.routes.draw do
   namespace :admin do
     resources :products
     resources :skus
-    resources :dashboards
+    resources :dashboards, only: [:show, :index]
   end
 
 

@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
  */
+
+.toolbar {
+    background-color: ghostwhite;
+    border-style: solid;
+    border-color: black;
+}

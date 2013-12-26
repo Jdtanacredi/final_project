@@ -23,28 +23,31 @@
 <% end %>
 
 <div class="container">
-  <header class="row">
+  <header class="toolbar row">
     <nav class="navbar navbar-pills">
       <div class="navbar-header">
-        <%= link_to 'Company Title!', root_path, class: 'navbar-brand' %>
-      </div>
+        <%= link_to(image_tag('logo.png', class: 'logo'), root_path) %>
 
+      </div>
+      <%= link_to 'Company Title!', root_path, class: 'navbar-brand' %>
       <ul class="nav navbar-nav">
         <li><%= link_to 'Home', root_path %></li>
         <li><%=  %></li>
         <li><%=  %></li>
         <% if current_or_guest_user.admin? %>
-        <li><%= link_to 'Admin' %></li>
+        <li><%= link_to 'Dashboard', admin_dashboards_path %></li>
         <li><%= link_to 'Products', admin_products_path %></li>
             <li><%= link_to 'Skus', admin_skus_path %></li>
             <% else %>
         <% end %>
       </ul>
-
     </nav>
   </header>
-    <%= yield %>
 </div>
+
+<div class="container">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
