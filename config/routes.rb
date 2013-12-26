@@ -1,6 +1,5 @@
 FinalProject::Application.routes.draw do
   root 'store#index'#, as: 'store'
-
   #get "line_items/index"
   #get "carts/:id", to: 'carts#show'
   #get "products/index"
@@ -10,6 +9,7 @@ FinalProject::Application.routes.draw do
   namespace :admin do
     resources :products
     resources :skus
+    resources :dashboards
   end
 
 
