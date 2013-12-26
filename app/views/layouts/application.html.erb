@@ -33,6 +33,12 @@
         <li><%= link_to 'Home', root_path %></li>
         <li><%=  %></li>
         <li><%=  %></li>
+        <% if current_or_guest_user.admin? %>
+        <li><%= link_to 'Admin' %></li>
+        <li><%= link_to 'Products', admin_products_path %></li>
+            <li><%= link_to 'Skus', admin_skus_path %></li>
+            <% else %>
+        <% end %>
       </ul>
 
     </nav>

@@ -1,7 +1,8 @@
 <% @products.each do |product| %>
     <% unless product.expired? %>
-        <div class="entry">
-          <%= image_tag product.image_url %>
+      <div class="panel panel-default col-md-4">
+        <div class="row">
+          <%= image_tag product.image_url, size: "100x150" %>
           <h3><%= product.title %></h3>
           <p><%= sanitize product.description %></p>
           <div class="price_line">
@@ -9,5 +10,6 @@
             <%= link_to 'Product Details', store_path(product) %>
           </div>
         </div>
+      </div>
     <% end %>
 <% end %>
