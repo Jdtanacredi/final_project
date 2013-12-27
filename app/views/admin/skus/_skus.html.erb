@@ -1,10 +1,22 @@
-<% @skus.each do |sku| %>
-  <div>
-    <%= sku.sku_number %>
-    <%= sku.product.title %>
-    <%= sku.size %>
-    <%= sku.color %>
-    <%= link_to 'Edit', edit_admin_sku_path(sku) %>
-    <%= link_to 'Destroy', admin_sku_path(sku) %>
-  </div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Sku#</th>
+      <th>Product</th>
+      <th>Size</th>
+      <th>Color</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @skus.each do |sku| %>
+    <tr>
+      <td><%= sku.sku_number %></td>
+      <td><%= sku.product.title %></td>
+      <td><%= sku.size %></td>
+      <td><%= sku.color %></td>
+      <td><%= link_to 'Edit', edit_admin_sku_path(sku) %></td>
+      <td><%= link_to 'Destroy', admin_sku_path(sku) %></td>
+    </tr>
+  </tbody>
 <% end %>
+</table>

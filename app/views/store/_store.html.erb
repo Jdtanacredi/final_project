@@ -1,15 +1,16 @@
 <% @products.each do |product| %>
     <% unless product.expired? %>
-      <div class="panel panel-default col-md-4">
-        <div class="row">
-          <%= image_tag product.image_url, size: "100x150" %>
-          <h3><%= product.title %></h3>
-          <p><%= sanitize product.description %></p>
-          <div class="price_line">
-            <span class="price"><%= sprintf("$%0.02f", product.price) %></span>
-            <%= link_to 'Product Details', store_path(product) %>
-          </div>
-        </div>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= image_tag product.image_url %>
+      <div class="caption">
+        <h3><%= product.title %></h3>
+        <p><%= sprintf("$%0.02f", product.price) %></p>
+        <p><a class="btn btn-primary" role="button"<%= link_to 'Product Details', store_path(product) %></a></p>
       </div>
+    </div>
+  </div>
+</div>
     <% end %>
 <% end %>

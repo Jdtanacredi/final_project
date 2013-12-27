@@ -1,6 +1,18 @@
-<% @users = User.all %>
-<% @users.each do |user| %>
-    <%= user.email %>
-    <%= user.admin %>
-    <%= user.customer_id %>
-<% end %>
+<table class="table">
+  <thead>
+    <tr>
+      <th>User Email</th>
+      <th>Is Admin?</th>
+      <th>Customer Id</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.email %></td>
+      <td><%= user.admin %></td>
+      <td><%= user.customer_id %></td>
+    </tr>
+  </tbody>
+  <% end %>
+</table>
