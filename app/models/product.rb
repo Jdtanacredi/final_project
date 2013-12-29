@@ -18,15 +18,20 @@ class Product < ActiveRecord::Base
     #end
   end
 
+  #COUNTS NUMBER OF SPECIFIC ITEMS PURCHASED. REDUCES PRICE IF PARAM MET
+  def discount?
+    @forty = product.price - (product.price * 0.40)
+    @thirty = product.price - (product.price * 0.30)
+    @twenty = product.price - (product.price * 0.20)
 
-  #private
-  #
-  #def not_ref_by_line_item
-  #  if line_items.empty?
-  #     true
-  #  else
-  #    errors.add(:base, 'Line Items present')
-  #    false
-  #  end
-  #end
+    #FIGURE OUT!
+    line_item = self.find(params[:id])
+    if line_item.count > 30
+      product.price = @forty
+    else
+      line_item.count < 10
+      product.price
+    end
+  end
+
 end
