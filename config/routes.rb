@@ -6,6 +6,7 @@ FinalProject::Application.routes.draw do
   #get "admin/products"
   devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout'}
   #get "admin/products#index"
+  get 'charges/create'
   namespace :admin do
     resources :products
     resources :skus
@@ -18,7 +19,7 @@ FinalProject::Application.routes.draw do
   resources :line_items, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   resources :carts, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   resources :store, only: [:index, :show]
-  resources :charges, only: [:new, :create]
+  resources :charges, only: [:create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

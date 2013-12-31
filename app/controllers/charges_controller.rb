@@ -6,8 +6,6 @@ class ChargesController < ApplicationController
         :email => params[:stripeEmail],
         :card  => params[:stripeToken]
     )
-    binding.pry
-
     current_user.update_attribute(:customer_id, customer.id)
 
   rescue Stripe::CardError => e
@@ -26,5 +24,4 @@ class ChargesController < ApplicationController
     # Done without a current_user, loop over all the users who bought the product
     )
   end
-
 end
