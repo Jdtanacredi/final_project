@@ -6,12 +6,14 @@
 
 <p> <%= @product.price %> </p>
 <!--Can add more fields to stripe-script -->
-<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+<%= form_tag charges_path do %>
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
         data-name="<%= @product.title %>"
         data-description="<%= @product.description %>"
         data-label="Claim"
         data-shipping-address="Enter shipping address here."
         data-amount=<%= (@product.price * 100).to_i %>></script>
+<% end %>
 
 <p> </p>
