@@ -1,12 +1,13 @@
 class ChargesController < ApplicationController
 
   def create
-
     customer = Stripe::Customer.create(
         :email => params[:stripeEmail],
         :card  => params[:stripeToken]
     )
     current_user.update_attribute(:customer_id, customer.id)
+
+    binding.pry
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
