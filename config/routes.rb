@@ -1,9 +1,5 @@
 FinalProject::Application.routes.draw do
   root 'store#index'#, as: 'store'
-  #get "line_items/index"
-  #get "carts/:id", to: 'carts#show'
-  #get "products/index"
-  #get "admin/products"
   devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout'}
   #get "admin/products#index"
   get 'charges/create'
@@ -12,11 +8,12 @@ FinalProject::Application.routes.draw do
     resources :skus
     resources :dashboards, only: [:show, :index]
     resources :users, only: [:index]
+    resources :orders
   end
 
 
   resources :products, only: [:index, :show]
-  resources :line_items, only: [:index, :new, :create, :show, :edit, :update, :destroy]
+  #resources :line_items, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   resources :carts, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   resources :store, only: [:index, :show]
   resources :charges, only: [:create]

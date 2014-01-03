@@ -1,5 +1,4 @@
 class Product < ActiveRecord::Base
-  #has_many :line_items
 
   #before_destroy :not_ref_by_line_item
 

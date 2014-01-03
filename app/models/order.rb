@@ -1,4 +1,4 @@
 class Order < ActiveRecord::Base
   belongs_to :user
-  has_one :sku
+  belongs_to :sku
 end

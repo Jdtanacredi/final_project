@@ -29,24 +29,20 @@ class ApplicationController < ActionController::Base
 
   private
 
-  def current_cart
-    Cart.find(session[:cart_id])
-  rescue ActiveRecord::RecordNotFound
-    cart = Cart.create
-    session[:cart_id] = cart.id
-    cart
-  end
+  #def current_cart
+  #  Cart.find(session[:cart_id])
+  #rescue ActiveRecord::RecordNotFound
+  #  cart = Cart.create
+  #  session[:cart_id] = cart.id
+  #  cart
+  #end
 
 #NEW CODE-------------------------------------------------------
   # called (once) when the user logs in, insert any code your application needs
   # to hand off from guest_user to current_user.
   def logging_in
-    # example:
-    # guest_comments = guest_user.comments.all
-    # guest_comments.each do |comment|
-    # comment.user_id = current_user.id
-    # comment.save!
-    current_cart.save!
+
+    #current_cart.save!
   end
 
   def create_guest_user
