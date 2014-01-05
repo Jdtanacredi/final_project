@@ -1,5 +1,5 @@
 class Product < ActiveRecord::Base
-
+has_many :skus
   #before_destroy :not_ref_by_line_item
 
   def expired?

@@ -8,10 +8,10 @@ class ChargesController < ApplicationController
 
     order = Order.create(
          user: current_user.id,
-         product: product.sku_id,
+         sku: sku_number,
          quantity: '1'
     )
-#
+
 #    binding.pry
 
     current_user.update_attribute(:customer_id, customer.id)
