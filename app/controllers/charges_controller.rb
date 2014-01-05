@@ -5,13 +5,16 @@ class ChargesController < ApplicationController
         :email => params[:stripeEmail],
         :card  => params[:stripeToken]
     )
-    #customer.order = Stripe::Order.create(
-    #    :user_id  => current_user.id,
-    #    :quantity => 1
-    #)
-    binding.pry
 
-    current_user.order.update_attribute(:customer_id, customer.id)
+    order = Order.create(
+         user: current_user.id,
+         product: product.sku_id,
+         quantity: '1'
+    )
+#
+#    binding.pry
+
+    current_user.update_attribute(:customer_id, customer.id)
 
   rescue Stripe::CardError => e
     flash[:error] = e.message

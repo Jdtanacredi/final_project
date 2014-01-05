@@ -5,6 +5,15 @@
 <p><%= @product.description %></p>
 
 <p> <%= @product.price %> </p>
+
+<div class="btn-toolbar" role="toolbar">
+  <button type="button" class="btn btn-default">XS</button>
+  <button type="button" class="btn btn-default">S</button>
+  <button type="button" class="btn btn-default">M</button>
+  <button type="button" class="btn btn-default">L</button>
+  <button type="button" class="btn btn-default">XL</button>
+</div>
+
 <!--Can add more fields to stripe-script -->
 <%= form_tag charges_path do %>
     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -13,7 +22,10 @@
         data-description="<%= @product.description %>"
         data-label="Claim"
         data-shipping-address="Enter shipping address here."
-        data-amount=<%= (@product.price * 100).to_i %>></script>
+        data-amount=<%= (@product.price * 100).to_i %>>
+     </script>
+    <%= hidden_field_tag :product, @product %>
+    <%= hidden_field_tag :quantity, '1' %>
 <% end %>
 
 <p> </p>
