@@ -1,4 +1,4 @@
-class ChargesWorker
+class DiscountsWorker
   include Sidekiq::Worker
 
   def perform

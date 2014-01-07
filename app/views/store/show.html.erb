@@ -17,12 +17,12 @@
         data-amount=<%= (@product.price * 100).to_i %>>
      </script>
     <% @product.skus.each do |sku| %>
-       <%= label_tag :sku, sku.size %>
-        <%= radio_button_tag :sku, sku %>
+       <%= label_tag :size, sku.size %>
+        <%= radio_button_tag :size, sku.size %>
         <% end %>
-    <%= hidden_field_tag :product, @product %>
+    <%= hidden_field_tag :product_id, @product.id %>
     <%= hidden_field_tag :quantity, '1' %>
-    <%#= hidden_field_tag :sku, @sku %>
+   >
 
 <% end %>
 
