@@ -13,8 +13,6 @@ FinalProject::Application.routes.draw do
 
 
   resources :products, only: [:index, :show]
-  #resources :line_items, only: [:index, :new, :create, :show, :edit, :update, :destroy]
-  resources :carts, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   resources :store, only: [:index, :show]
   resources :charges, only: [:create]
   # The priority is based upon order of creation: first created -> highest priority.

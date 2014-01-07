@@ -6,7 +6,6 @@
 
 <p> <%= @product.price %> </p>
 
-
 <!--Can add more fields to stripe-script -->
 <%= form_tag charges_path do %>
     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -23,7 +22,8 @@
         <% end %>
     <%= hidden_field_tag :product, @product %>
     <%= hidden_field_tag :quantity, '1' %>
-    <%= hidden_field_tag :sku, sku %>
+    <%#= hidden_field_tag :sku, @sku %>
+
 <% end %>
 
 <p> </p>

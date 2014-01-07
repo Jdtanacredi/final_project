@@ -1,21 +1,20 @@
 class ChargesController < ApplicationController
 
   def create
+binding.pry
     customer = Stripe::Customer.create(
         :email => params[:stripeEmail],
         :card  => params[:stripeToken]
     )
 
     order = Order.create(
-         user: current_user.id,
-         sku: sku_number,
+         user_id: current_user.id,
+         sku_id: Sku.find(params[:sku]),
          quantity: '1'
     )
 
-#    binding.pry
-
     current_user.update_attribute(:customer_id, customer.id)
-
+    #current_user.order.update_attribute(:customer_id, customer.id)
   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to charges_path
