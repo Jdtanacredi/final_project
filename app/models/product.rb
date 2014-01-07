@@ -24,7 +24,7 @@ has_many :skus
     @twenty = product.price - (product.price * 0.20)
 
     #FIGURE OUT!
-    line_item = self.find(params[:id])
+
     if line_item.count > 30
       product.price = @forty
     else
