@@ -11,7 +11,6 @@ FinalProject::Application.routes.draw do
     resources :orders
   end
 
-
   resources :products, only: [:index, :show]
   resources :store, only: [:index, :show]
   resources :charges, only: [:create]

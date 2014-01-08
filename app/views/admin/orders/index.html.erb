@@ -11,11 +11,15 @@
     <tr>
       <td><%= order.id %></td>
       <td><%= order.user.email %></td>
-      <td><%#= order.sku.product %></td>
+      <td><%#= order.sku.title %></td>
       <td><%#= order.sku.find_by(product_id: params[:product_id]) %></td>
       <td><%= order.customer_id %></td>
-      <td><%= link_to 'Show', @order %></td>
+      <td><%= link_to 'Show', admin_order_path(order) %></td>
+      <td><%= button_to 'Destroy', admin_order_path(order), method: :delete %></td>
     </tr>
   </tbody>
   <% end %>
+
+<%= link_to 'Create a Order', new_admin_order_path %>
+
 </table>

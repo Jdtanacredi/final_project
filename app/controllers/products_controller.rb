@@ -3,12 +3,19 @@ class ProductsController < ApplicationController
   before_action :find_product
 
   def index
-    @product = Product.all
+    @products = Product.all
   end
 
   def show
     @product = Product.find params[:id]
   end
+
+  def create
+  @product = Product.new
+   save.expired_at = @product.created_at
+  end
+
+
 
 private
 

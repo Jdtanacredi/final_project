@@ -1,0 +1,11 @@
+<%= form_for @order do |f| %>
+    <%= f.label sku_id %>
+    <%= f.text_field sku_id %>
+    <%= f.label customer_id %>
+    <%= f.text_field customer_id %>
+    <%= f.label quantity %>
+    <%= f.text_field quantity %>
+    <%= f.label user_id %>
+    <%= f.text_field user_id %>
+    <%= f.submit %>
+<% end %>

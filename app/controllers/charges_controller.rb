@@ -22,18 +22,4 @@ binding.pry
     redirect_to charges_path
   end
 
-  def charge
-    ### READ NOTES
-    @amount = Product.find(params[:id]).price * 100
-
-    Product.expired?.each do
-
-      Stripe::Charge.create(
-          :amount   => @amount, # or whatever the amount will be, discounted or not
-          :currency => "usd",
-          :customer => current_user.order.customer_id
-      # Done without a current_user, loop over all the users who bought the product
-      )
-    end
-  end
 end
