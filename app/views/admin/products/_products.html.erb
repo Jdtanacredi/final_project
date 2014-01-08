@@ -7,7 +7,7 @@
       <div class="buttons">
         <%= link_to 'Show', product %>
         <%= link_to 'Edit', edit_admin_product_path(product) %>
-        <%= link_to 'Destroy', admin_product_path(product) %>
+        <%= button_to 'Destroy', admin_product_path(product), method: :delete %>
       </div>
     </div>
 
