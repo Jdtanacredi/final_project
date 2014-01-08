@@ -41,6 +41,12 @@ end
 group :development do
   gem 'pry-rails'
 end
+
+group :production do
+  gem 'rails_12factor'
+  gem 'sqlite3'
+  gem 'pg'
+end
 #gem 'rolify', '~> 3.2.0'
 
 # Use ActiveModel has_secure_password
