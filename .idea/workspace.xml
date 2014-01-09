@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/clock.rb" afterPath="$PROJECT_DIR$/lib/clock.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <ignored path="final_project.iws" />
@@ -92,22 +93,13 @@
     <favorites_list name="final_project" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.44254032">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/admin/orders/index.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="10" selection-start="122" selection-end="122" vertical-scroll-proportion="-5.3846154">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="209" selection-start="919" selection-end="919" vertical-scroll-proportion="0.28213167">
+                <state line="3" column="20" selection-start="59" selection-end="59" vertical-scroll-proportion="-2.3076923">
                   <folding />
                 </state>
               </provider>
@@ -116,7 +108,16 @@
           <file leaf-file-name="product.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/models/product.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="48" column="0" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0">
+                <state line="49" column="21" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="24" column="69" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.7804878">
                   <folding />
                 </state>
               </provider>
@@ -147,7 +148,7 @@
           <file leaf-file-name="clock.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/clock.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="17" selection-start="238" selection-end="238" vertical-scroll-proportion="0.2507837">
+                <state line="6" column="5" selection-start="142" selection-end="142" vertical-scroll-proportion="0.18808778">
                   <folding />
                 </state>
               </provider>
@@ -185,10 +186,10 @@
         <option value="$PROJECT_DIR$/app/views/admin/orders/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/product.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140109222306_add_active_to_products.rb" />
-        <option value="$PROJECT_DIR$/lib/clock.rb" />
         <option value="$PROJECT_DIR$/app/models/order.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/products_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
+        <option value="$PROJECT_DIR$/lib/clock.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
@@ -925,30 +926,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/orders/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="59" selection-end="59" vertical-scroll-proportion="-2.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/product.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0">
+        <state line="49" column="21" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/clock.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="238" selection-end="238" vertical-scroll-proportion="0.2507837">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/orders/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="122" selection-end="122" vertical-scroll-proportion="-5.3846154">
+        <state line="6" column="5" selection-start="142" selection-end="142" vertical-scroll-proportion="0.18808778">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="209" selection-start="919" selection-end="919" vertical-scroll-proportion="0.28213167">
+        <state line="24" column="69" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.7804878">
           <folding />
         </state>
       </provider>

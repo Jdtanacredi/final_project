@@ -9,7 +9,6 @@ module Clockwork
   # handler do |job, time|
   #   puts "Running #{job}, at #{time}"
   # end
-
   every(1.hour, 'price_check', tz: EST) do
     products = Product.all
     products.each do |product|
