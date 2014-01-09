@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/workers/charges_worker.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/workers/discounts_worker.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/clock.rb" afterPath="$PROJECT_DIR$/lib/clock.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/order.rb" afterPath="$PROJECT_DIR$/app/models/order.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/products_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/products_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <ignored path="final_project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +13,7 @@
     <file path="/index.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389231875969" ignored="false" />
     <file path="/_products.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389155661119" ignored="false" />
     <file path="/show.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389058155229" ignored="false" />
-    <file path="/seeds.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389221294599" ignored="false" />
+    <file path="/seeds.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389308875674" ignored="false" />
     <file path="/edit.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1386826986384" ignored="false" />
     <file path="/Gemfile" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389226856265" ignored="false" />
     <file path="$PROJECT_DIR$/../movies_app/Gemfile" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1386090205277" ignored="false" />
@@ -102,10 +95,19 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/admin/orders/index.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="10" selection-start="122" selection-end="122" vertical-scroll-proportion="0.22875817">
+                <state line="7" column="10" selection-start="122" selection-end="122" vertical-scroll-proportion="-5.3846154">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="38" selection-start="997" selection-end="997" vertical-scroll-proportion="0.4075235">
                   <folding />
                 </state>
               </provider>
@@ -176,7 +178,6 @@
         <option value="$PROJECT_DIR$/app/views/admin/products/_products.html.erb" />
         <option value="$PROJECT_DIR$/app/views/store/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/users/index.html.erb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/controllers/charges_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/workers/discounts_worker.rb" />
@@ -188,6 +189,7 @@
         <option value="$PROJECT_DIR$/app/models/order.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/products_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -939,7 +941,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/orders/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="122" selection-end="122" vertical-scroll-proportion="0.22875817">
+        <state line="7" column="10" selection-start="122" selection-end="122" vertical-scroll-proportion="-5.3846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="38" selection-start="997" selection-end="997" vertical-scroll-proportion="0.4075235">
           <folding />
         </state>
       </provider>
