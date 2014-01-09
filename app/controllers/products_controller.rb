@@ -11,8 +11,9 @@ class ProductsController < ApplicationController
   end
 
   def create
-  @product = Product.new
-   save.expired_at = @product.created_at
+  @product = Product.create
+  expired_at = @product.created_at + 2.days
+    expired_at.save!
   end
 
   def destroy

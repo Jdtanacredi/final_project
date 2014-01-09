@@ -12,9 +12,8 @@ class ChargesController < ApplicationController
          sku_id: product.skus.find_by(size: params[:size]).id,
          quantity: '1',
          customer_id: customer.id
-
     )
-binding.pry
+#binding.pry
     #current_user.update_attribute(:customer_id, customer.id)
 
   rescue Stripe::CardError => e

@@ -4,7 +4,6 @@ class Order < ActiveRecord::Base
   validates_presence_of :sku
   #has_one :product, through: :sku
 
-
   def charge(price)
     ### READ NOTES
       Stripe::Charge.create(

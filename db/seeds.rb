@@ -8,17 +8,17 @@
 #Product.create title: 'Sweater - Test Product', description: 'This sweater is a test product', image_url: "test1.jpg", price: 80.00
 #Product.create title: 'Blazer - Test Product', description: 'This blazer is a test product. Please delete before going live.', image_url: "test2.jpg", price: 150.00
 #Product.create title: 'Blue Blazer - Test Product', description: 'This blue blazer is a test product. Please delete before going live.', image_url: "test3.jpg", price: 180.00
-#
+##
 #Sku.create sku_number: '1', size: 'xs', color: 'test', product_id: '7'
 #Sku.create sku_number: '2', size: 's', color: 'test', product_id: '7'
 #Sku.create sku_number: '3', size: 'm', color: 'test', product_id: '7'
 #Sku.create sku_number: '4', size: 'l', color: 'test', product_id: '7'
-#
+##
 #Sku.create sku_number: '5', size: 'xs', color: 'test', product_id: '8'
 #Sku.create sku_number: '6', size: 's', color: 'test', product_id: '8'
 #Sku.create sku_number: '7', size: 'm', color: 'test', product_id: '8'
 #Sku.create sku_number: '8', size: 'l', color: 'test', product_id: '8'
-#
+##
 #Sku.create sku_number: '9', size: 'xs', color: 'test', product_id: '9'
 #Sku.create sku_number: '10', size: 's', color: 'test', product_id: '9'
 #Sku.create sku_number: '11', size: 'm', color: 'test', product_id: '9'
