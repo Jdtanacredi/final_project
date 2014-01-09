@@ -13,7 +13,7 @@
     <file path="/index.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389231875969" ignored="false" />
     <file path="/_products.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389155661119" ignored="false" />
     <file path="/show.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389058155229" ignored="false" />
-    <file path="/seeds.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389308875674" ignored="false" />
+    <file path="/seeds.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389310087083" ignored="false" />
     <file path="/edit.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1386826986384" ignored="false" />
     <file path="/Gemfile" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389226856265" ignored="false" />
     <file path="$PROJECT_DIR$/../movies_app/Gemfile" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1386090205277" ignored="false" />
@@ -107,7 +107,7 @@
           <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/db/seeds.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="38" selection-start="997" selection-end="997" vertical-scroll-proportion="0.4075235">
+                <state line="9" column="209" selection-start="919" selection-end="919" vertical-scroll-proportion="0.28213167">
                   <folding />
                 </state>
               </provider>
@@ -948,7 +948,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="38" selection-start="997" selection-end="997" vertical-scroll-proportion="0.4075235">
+        <state line="9" column="209" selection-start="919" selection-end="919" vertical-scroll-proportion="0.28213167">
           <folding />
         </state>
       </provider>

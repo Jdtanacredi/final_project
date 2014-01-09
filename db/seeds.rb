@@ -5,9 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Product.create title: 'Sweater - Test Product', description: 'This sweater is a test product', image_url: "test1.jpg", price: 80.00
-Product.create title: 'Blazer - Test Product', description: 'This blazer is a test product. Please delete before going live.', image_url: "test2.jpg", price: 150.00
-Product.create title: 'Blue Blazer - Test Product', description: 'This blue blazer is a test product. Please delete before going live.', image_url: "test3.jpg", price: 180.00
+Product.create title: 'Sweater - Test Product', description: 'This sweater is a test product', image_url: "test1.jpg", price: 80.00, expired_at: "2014-01-11 23:26:29"
+Product.create title: 'Blazer - Test Product', description: 'This blazer is a test product. Please delete before going live.', image_url: "test2.jpg", price: 150.00, expired_at: "2014-01-11 23:26:29"
+Product.create title: 'Blue Blazer - Test Product', description: 'This blue blazer is a test product. Please delete before going live.', image_url: "test3.jpg", price: 180.00, expired_at: "2014-01-11 23:26:29"
 ##
 Sku.create sku_number: '1', size: 'xs', color: 'test', product_id: '7'
 Sku.create sku_number: '2', size: 's', color: 'test', product_id: '7'
