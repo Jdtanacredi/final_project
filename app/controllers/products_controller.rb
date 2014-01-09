@@ -10,17 +10,17 @@ class ProductsController < ApplicationController
     @product = Product.find params[:id]
   end
 
-  def create
-  @product = Product.create
-  expired_at = @product.created_at + 2.days
-    expired_at.save!
-  end
+  #def create
+  #@product = Product.create
+  #expired_at = @product.created_at + 2.days
+  #  expired_at.save!
+  #end
 
-  def destroy
-    product = Product.find params[:id]
-    product.destroy
-    redirect_to admin_products_path
-  end
+  #def destroy
+  #  product = Product.find params[:id]
+  #  product.destroy
+  #  redirect_to admin_products_path
+  #end
 
 private
 

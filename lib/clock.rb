@@ -10,12 +10,6 @@ module Clockwork
   #   puts "Running #{job}, at #{time}"
   # end
 
-  #every(10.seconds, 'frequent.job')
-  #every(3.minutes, 'less.frequent.job')
-  #every(1.hour, 'hourly.job')
-
-  #every(1.hour, 'price_check') do CODE BELOW
-  #be aware of timezone tz: EST
   every(1.hour, 'price_check', tz: EST) do
     products = Product.all
     products.each do |product|
@@ -33,6 +27,7 @@ module Clockwork
         order.charge(price)
         product.update_attribute(:active, false)
       end
+      # should I put above update here instead?
     end
   end
 

@@ -14,7 +14,6 @@ class Order < ActiveRecord::Base
       )
     end
 
-
   # def charge(price) #=> a call to stripe api
   # and price comes from what we found out in the product
 

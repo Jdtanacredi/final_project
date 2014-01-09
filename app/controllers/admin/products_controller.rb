@@ -11,6 +11,8 @@ class Admin::ProductsController < AdminsController
 
   def create
     product = Product.create safe_product
+    expired_at = @product.created_at + 2.days
+    expired_at.save!
     redirect_to product
   end
 
