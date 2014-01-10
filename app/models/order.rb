@@ -4,13 +4,10 @@ class Order < ActiveRecord::Base
   validates_presence_of :sku
 
   def charge(price)
-    ### READ NOTES
       Stripe::Charge.create(
-          :amount   => price, # or whatever the amount will be, discounted or not
+          :amount   => price,
           :currency => "usd",
           :customer => order.customer_id
-      # Done without a current_user, loop over all the users who bought the product
       )
     end
-
 end
