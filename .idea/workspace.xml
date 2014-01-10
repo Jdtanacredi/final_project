@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/clock.rb" afterPath="$PROJECT_DIR$/lib/clock.rb" />
     </list>
     <ignored path="final_project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,7 +66,7 @@
     <file path="/orders_controller.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389147410064" ignored="false" />
     <file path="/charges_worker.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389055903671" ignored="false" />
     <file path="/discounts_worker.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389228818375" ignored="false" />
-    <file path="/clock.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389392229987" ignored="false" />
+    <file path="/clock.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389397077731" ignored="false" />
     <file path="/20140109011651_add_expired_at_to_products.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389230371596" ignored="false" />
     <file path="/20140109222306_add_active_to_products.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389306243169" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -150,7 +150,7 @@
       <file leaf-file-name="clock.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/clock.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="26" selection-start="247" selection-end="247" vertical-scroll-proportion="0.24577573">
+            <state line="5" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.15360983">
               <folding />
             </state>
           </provider>
@@ -196,10 +196,10 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/clock.rb" />
-        <option value="$PROJECT_DIR$/lib/clock.rb" />
         <option value="$PROJECT_DIR$/app/models/order.rb" />
         <option value="$PROJECT_DIR$/app/views/charges/create.html.erb" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/lib/clock.rb" />
       </list>
     </option>
   </component>
@@ -797,7 +797,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/clock.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="247" selection-end="247" vertical-scroll-proportion="0.24577573">
+        <state line="5" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.15360983">
           <folding />
         </state>
       </provider>
