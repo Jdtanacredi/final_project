@@ -37,7 +37,6 @@
         <li><%=  %></li>
         <li><%=  %></li>
         <% if current_or_guest_user.admin? %>
-            <li><%= link_to 'Dashboard', admin_dashboards_path %></li>
             <li><%= link_to 'Products', admin_products_path %></li>
             <li><%= link_to 'Skus', admin_skus_path %></li>
             <li><%= link_to 'Users', admin_users_path %></li>

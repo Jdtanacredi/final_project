@@ -1,6 +1,4 @@
 class ApplicationController < ActionController::Base
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   helper_method :current_or_guest_user
 
@@ -17,6 +15,7 @@ class ApplicationController < ActionController::Base
       guest_user
     end
   end
+
   # find guest_user object associated with the current session,
   def guest_user
     # Cache the value the first time
@@ -25,23 +24,10 @@ class ApplicationController < ActionController::Base
     session[:guest_user_id] = nil
     guest_user
   end
-#END NEW CODE---------------------------------------------
 
   private
 
-  #def current_cart
-  #  Cart.find(session[:cart_id])
-  #rescue ActiveRecord::RecordNotFound
-  #  cart = Cart.create
-  #  session[:cart_id] = cart.id
-  #  cart
-  #end
-
-#NEW CODE-------------------------------------------------------
-  # called (once) when the user logs in, insert any code your application needs
-  # to hand off from guest_user to current_user.
   def logging_in
-
     #current_cart.save!
   end
 
@@ -51,7 +37,4 @@ class ApplicationController < ActionController::Base
     session[:guest_user_id] = u.id
     u
   end
-#END NEW CODE----------------------------------------------------
-
-
 end
