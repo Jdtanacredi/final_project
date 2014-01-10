@@ -2,7 +2,7 @@ require 'clockwork'
 require './config/boot'
 require './config/environment'
 module Clockwork
-  handler do |job|
+  handler do |job, 1.hour|
     puts "Running #{job}"
   end
   # handler receives the time when job is prepared to run in the 2nd argument
