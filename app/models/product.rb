@@ -1,7 +1,6 @@
 class Product < ActiveRecord::Base
   has_many :skus
   has_many :orders, through: :skus
-  #before_destroy :not_ref_by_line_item
 
   def self.expired_and_active
     where('expired_at < ?', Time.now)
@@ -41,10 +40,8 @@ class Product < ActiveRecord::Base
     end
   end
 
-  #Erase once I set active/not active
   def expired?
-    hide_product = self.created_at + 30.days
-    Time.now > hide_product
+    self.active = false
   end
 
   #1.!!! class method (Product.method) to find all expired and active products ##LOOK UP SCOPES

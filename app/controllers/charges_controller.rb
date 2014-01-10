@@ -13,8 +13,6 @@ class ChargesController < ApplicationController
          quantity: '1',
          customer_id: customer.id
     )
-#binding.pry
-    #current_user.update_attribute(:customer_id, customer.id)
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
