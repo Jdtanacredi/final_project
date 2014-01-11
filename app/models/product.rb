@@ -7,11 +7,9 @@ class Product < ActiveRecord::Base
   end
 
   def calculate_final_price
-    expired_products = Product.expired_and_active
-    expired_products.each do |product|
-      nada = product.price
-      forty = product.price - (product.price * 0.40)
-      twenty = product.price - (product.price * 0.20)
+      nada = price
+      forty = price - (product.price * 0.40)
+      twenty = price - (product.price * 0.20)
 
       if product.orders.count < 10
         @amount = nada
@@ -24,15 +22,13 @@ class Product < ActiveRecord::Base
   end
 
   def calculate_price
+      nada = price
+      forty = price - (price * 0.40)
+      twenty = price - (price * 0.20)
 
-    self.each do |product|
-      nada = product.price
-      forty = product.price - (product.price * 0.40)
-      twenty = product.price - (product.price * 0.20)
-
-      if product.orders.count < 10
+      if orders.count < 10
         @amount = nada
-      elsif product.orders.count.between(10, 30)
+      elsif orders.count.between(10, 30)
         @amount = twenty
       else
         @amount = forty
