@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/runner.rake" afterPath="$PROJECT_DIR$/lib/tasks/runner.rake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="final_project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -162,7 +161,7 @@
       <file leaf-file-name="runner.rake" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/tasks/runner.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.7006369">
+            <state line="9" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.2866242">
               <folding />
             </state>
           </provider>
@@ -827,7 +826,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/runner.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.7006369">
+        <state line="9" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.2866242">
           <folding />
         </state>
       </provider>

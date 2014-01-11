@@ -8,7 +8,6 @@
     end
   end
 
-  desc 'check expiration'
     task :check_expired => :environment do
       products = Product.expired_and_active
       products.each do |product|
