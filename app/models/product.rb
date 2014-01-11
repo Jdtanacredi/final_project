@@ -8,8 +8,8 @@ class Product < ActiveRecord::Base
 
   def calculate_final_price
       nada = price
-      forty = price - (product.price * 0.40)
-      twenty = price - (product.price * 0.20)
+      forty = price - (price * 0.40)
+      twenty = price - (price * 0.20)
 
       if product.orders.count < 10
         @amount = nada
@@ -19,7 +19,7 @@ class Product < ActiveRecord::Base
         @amount = forty
       end
     end
-  end
+
 
   def calculate_price
       nada = price
@@ -34,7 +34,7 @@ class Product < ActiveRecord::Base
         @amount = forty
       end
     end
-  end
+
 
   def expired?
     self.active = false
