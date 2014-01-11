@@ -1,4 +1,4 @@
-namespace :runner do
+
   desc 'price check'
   task :calculate_price => :environment do
     products = Product.all
@@ -20,4 +20,3 @@ namespace :runner do
       end
     end
   end
-end
