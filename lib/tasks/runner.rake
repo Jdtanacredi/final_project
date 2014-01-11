@@ -3,7 +3,7 @@
   task :calculate_price => :environment do
     products = Product.all
     products.each do |product|
-      price = product.calculate_price
+      price = product.calculate_final_price
       product.update_attribute(:price, price)
     end
   end

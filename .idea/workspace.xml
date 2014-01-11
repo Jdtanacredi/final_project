@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/product.rb" afterPath="$PROJECT_DIR$/app/models/product.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/runner.rake" afterPath="$PROJECT_DIR$/lib/tasks/runner.rake" />
     </list>
     <ignored path="final_project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,7 +70,7 @@
     <file path="/20140109011651_add_expired_at_to_products.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389230371596" ignored="false" />
     <file path="/20140109222306_add_active_to_products.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389306243169" ignored="false" />
     <file path="/runner.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389397645122" ignored="false" />
-    <file path="/runner.rake" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389399501988" ignored="false" />
+    <file path="/runner.rake" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389401885158" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,19 +95,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="product.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="product.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/product.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="21" selection-start="494" selection-end="494" vertical-scroll-proportion="0.43887147">
+            <state line="20" column="7" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runner.rake" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="runner.rake" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/tasks/runner.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="28" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+            <state line="9" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.2764977">
               <folding />
             </state>
           </provider>
@@ -146,8 +146,8 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/lib/clock.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/runner.rb" />
-        <option value="$PROJECT_DIR$/lib/tasks/runner.rake" />
         <option value="$PROJECT_DIR$/app/models/product.rb" />
+        <option value="$PROJECT_DIR$/lib/tasks/runner.rake" />
       </list>
     </option>
   </component>
@@ -765,16 +765,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/runner.rake">
+    <entry file="file://$PROJECT_DIR$/app/models/product.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+        <state line="20" column="7" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/product.rb">
+    <entry file="file://$PROJECT_DIR$/lib/tasks/runner.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="21" selection-start="494" selection-end="494" vertical-scroll-proportion="0.43887147">
+        <state line="9" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.2764977">
           <folding />
         </state>
       </provider>
