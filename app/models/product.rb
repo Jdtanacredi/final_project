@@ -21,19 +21,19 @@ class Product < ActiveRecord::Base
     end
 
 
-  def calculate_price
-      nada = price
-      forty = price - (price * 0.40)
-      twenty = price - (price * 0.20)
-
-      if product.orders.count < 10
-        @amount = nada
-      elsif product.orders.count.between(10, 30)
-        @amount = twenty
-      else
-        @amount = forty
-      end
-    end
+  #def calculate_price
+  #    nada = price
+  #    forty = price - (price * 0.40)
+  #    twenty = price - (price * 0.20)
+  #
+  #    if product.orders.count < 10
+  #      @amount = nada
+  #    elsif product.orders.count.between(10, 30)
+  #      @amount = twenty
+  #    else
+  #      @amount = forty
+  #    end
+  #  end
 
 
   def expired?
