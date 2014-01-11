@@ -1,5 +1,5 @@
 class Sku < ActiveRecord::Base
   belongs_to :product
-  belongs_to :order
+  has_many :orders
   delegate :title, :description, :image_url, to: :product
 end
