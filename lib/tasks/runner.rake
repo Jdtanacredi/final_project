@@ -1,3 +1,4 @@
+namespace :runner do
   desc 'price check'
   task :calculate_price => :environment do
     products = Product.all
@@ -7,6 +8,7 @@
     end
   end
 
+  desc 'check if expired and charge'
     task :check_expired => :environment do
       products = Product.expired_and_active
       products.each do |product|
@@ -18,3 +20,4 @@
       end
     end
   end
+end
