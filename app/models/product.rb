@@ -11,9 +11,9 @@ class Product < ActiveRecord::Base
       forty = price - (price * 0.40)
       twenty = price - (price * 0.20)
 
-      if product.orders.count < 10
+      if product.skus.orders.count < 10
         @amount = nada
-      elsif product.orders.count.between(10, 30)
+      elsif product.skus.orders.count.between(10, 30)
         @amount = twenty
       else
         @amount = forty
