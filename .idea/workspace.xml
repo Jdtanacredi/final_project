@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tasks/runner.rake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/runner.rake" afterPath="$PROJECT_DIR$/lib/tasks/runner.rake" />
     </list>
     <ignored path="final_project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,7 +70,7 @@
     <file path="/20140109011651_add_expired_at_to_products.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389230371596" ignored="false" />
     <file path="/20140109222306_add_active_to_products.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389306243169" ignored="false" />
     <file path="/runner.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389397645122" ignored="false" />
-    <file path="/runner.rake" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389397961522" ignored="false" />
+    <file path="/runner.rake" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389399366425" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +161,7 @@
       <file leaf-file-name="runner.rake" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/tasks/runner.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="3" selection-start="603" selection-end="603" vertical-scroll-proportion="0.7324841">
+            <state line="9" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="0.2866242">
               <folding />
             </state>
           </provider>
@@ -827,7 +826,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/runner.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="3" selection-start="603" selection-end="603" vertical-scroll-proportion="0.7324841">
+        <state line="9" column="0" selection-start="241" selection-end="241" vertical-scroll-proportion="0.2866242">
           <folding />
         </state>
       </provider>

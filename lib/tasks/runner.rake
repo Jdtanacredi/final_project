@@ -1,7 +1,5 @@
 namespace :runner do
-  desc "clockwork"
-
-
+  desc 'price check'
   task :calculate_price => :environment do
     products = Product.all
     products.each do |product|
@@ -10,6 +8,7 @@ namespace :runner do
     end
   end
 
+  desc 'check expiration'
     task :check_expired => :environment do
       products = Product.expired_and_active
       products.each do |product|
