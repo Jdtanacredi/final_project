@@ -11,9 +11,11 @@
  *= require_self
  *= require_tree .
  */
-
-.toolbar {
-    /*background-color: ghostwhite;*/
-    border-style: solid;
-    border-color: black;
+body {
+    padding-top: 60px;
+}
+@media (max-width: 979px) {
+    body {
+        padding-top: 0px;
+    }
 }

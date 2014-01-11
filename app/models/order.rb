@@ -5,7 +5,7 @@ class Order < ActiveRecord::Base
 
   def charge(price)
       Stripe::Charge.create(
-          :amount   => price,
+          :amount   => (price * 100).floor,
           :currency => "usd",
           :customer => order.customer_id
       )
