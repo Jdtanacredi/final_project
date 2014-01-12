@@ -6,10 +6,11 @@ class Product < ActiveRecord::Base
     where('expired_at < ?', Time.now)
   end
 
-  def self.expired?
+  def active?
     #where('active = ?', false)
     #where(active: true)
-    self.active = false
+    #self.active = false
+    active == true
   end
 
   def calculate_final_price
