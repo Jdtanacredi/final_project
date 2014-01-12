@@ -1,17 +1,18 @@
 class Product < ActiveRecord::Base
   has_many :skus
   has_many :orders, through: :skus
+  scope :active, -> { where(active: true) }
 
   def self.expired_and_active
-    where('expired_at < ?', Time.now)
+    where('expired_at < ?', Time.now).active
   end
 
-  def active?
+  #def active?
     #where('active = ?', false)
     #where(active: true)
     #self.active = false
-    active == true
-  end
+    #active == true
+  #end
 
   def calculate_final_price
       nada = price
