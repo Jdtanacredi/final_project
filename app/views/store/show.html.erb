@@ -1,6 +1,30 @@
-<h1><%= @product.title %></h1>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag @product.image_url %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Example headline.</h1>
+          <p>TEST TEST TEST</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+        </div>
+      </div>
+    </div>
 
-<p> <%= image_tag @product.image_url %> </p>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+
+
+<h1><%= @product.title %></h1>
 
 <p><%= @product.description %></p>
 
