@@ -9,3 +9,8 @@ $btn-primary-color: #f4efdd;
 
 $navbar-default-color: #586575;
 @import 'bootstrap';
+
+.carousel-inner > .item > img { margin: 0 auto; }
+.carousel-inner {
+  height: 500px;
+}

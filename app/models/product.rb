@@ -13,7 +13,7 @@ class Product < ActiveRecord::Base
 
       if orders.count < 10
         amount = nada
-      elsif orders.count.between(10, 30)
+      elsif orders.count.between?(10, 30)
         amount = twenty
       else
         amount = forty
