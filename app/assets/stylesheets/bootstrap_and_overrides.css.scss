@@ -1,10 +1,15 @@
 $navbar-default-brand-color: #3c3c1d;
 $body-bg: white;
-$brand-primary: #2b46e6;
+//$brand-primary: #2b46e6;
 $btn-primary-color: #f4efdd;
 $navbar-default-color: #586575;
 .carousel-inner > .item > img { margin: 0 auto; }
 .carousel-inner {
   height: 500px;
 }
+
 @import 'bootstrap';
+
+#radio {
+  background-color: #323232;
+}

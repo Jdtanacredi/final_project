@@ -22,15 +22,16 @@
   <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
 
-
+<div class="col-md-6">
 
 <h1><%= @product.title %></h1>
 
 <p><%= @product.description %></p>
-
-<p> <%= @product.price %> </p>
+</div>
 
 <!--Can add more fields to stripe-script -->
+<div class="col-md-4">
+  <h2>$ <%= @product.price %> </h2>
 <%= form_tag charges_path do %>
     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
@@ -41,12 +42,13 @@
         data-amount=<%= (@product.price * 100).to_i %>>
      </script>
     <% @product.skus.each do |sku| %>
-       <%= label_tag :size, sku.size %>
-        <%= radio_button_tag :size, sku.size %>
-        <% end %>
+          <label class="btn btn-primary" id="radio"><%= label_tag :size, sku.size %>
+          <%= radio_button_tag :size, sku.size %></label>
+    <% end %>
+
     <%= hidden_field_tag :product_id, @product.id %>
     <%= hidden_field_tag :quantity, '1' %>
 
 <% end %>
-
+</div>
 <p> </p>
