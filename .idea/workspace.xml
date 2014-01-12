@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/store/show.html.erb" afterPath="$PROJECT_DIR$/app/views/store/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="final_project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -14,8 +14,8 @@
     <file path="/products_controller.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389230454917" ignored="false" />
     <file path="/index.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389553882021" ignored="false" />
     <file path="/_products.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389155661119" ignored="false" />
-    <file path="/show.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389556252289" ignored="false" />
-    <file path="/seeds.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389554607777" ignored="false" />
+    <file path="/show.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389556567469" ignored="false" />
+    <file path="/seeds.rb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389557788858" ignored="false" />
     <file path="/edit.html.erb" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1386826986384" ignored="false" />
     <file path="/Gemfile" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1389226856265" ignored="false" />
     <file path="$PROJECT_DIR$/../movies_app/Gemfile" changelist="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" time="1386090205277" ignored="false" />
@@ -96,7 +96,7 @@
     <favorites_list name="final_project" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42307693">
+    <splitter split-orientation="horizontal" split-proportion="0.82772684">
       <split-first>
         <leaf>
           <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
@@ -108,19 +108,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/db/seeds.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
+                <state line="4" column="1" selection-start="216" selection-end="216" vertical-scroll-proportion="0.13050571">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="bootstrap_and_overrides.css.scss" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="bootstrap_and_overrides.css.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="1" selection-start="229" selection-end="229" vertical-scroll-proportion="0.27118644">
+                <state line="13" column="1" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -141,10 +141,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/store/show.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="0" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.85178876">
+                <state line="44" column="54" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.57978725">
                   <folding />
                 </state>
               </provider>
@@ -184,9 +184,9 @@
         <option value="$PROJECT_DIR$/app/models/product.rb" />
         <option value="$PROJECT_DIR$/app/views/store/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/store/_store.html.erb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/views/store/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -917,13 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/runner.rake">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="26" selection-start="431" selection-end="431" vertical-scroll-proportion="0.44728434">
@@ -942,14 +935,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="1" selection-start="229" selection-end="229" vertical-scroll-proportion="0.27118644">
+        <state line="13" column="1" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/store/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.85178876">
+        <state line="44" column="54" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.57978725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="1" selection-start="216" selection-end="216" vertical-scroll-proportion="0.13050571">
           <folding />
         </state>
       </provider>

@@ -31,7 +31,7 @@
 
 <!--Can add more fields to stripe-script -->
 <div class="col-md-4">
-  <h2>$ <%= @product.price %> </h2>
+  <h2>$ <%= @product.price%>0 </h2>
 <%= form_tag charges_path do %>
     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
@@ -45,10 +45,8 @@
           <label class="btn btn-primary" id="radio"><%= label_tag :size, sku.size %>
           <%= radio_button_tag :size, sku.size %></label>
     <% end %>
-
     <%= hidden_field_tag :product_id, @product.id %>
     <%= hidden_field_tag :quantity, '1' %>
-
 <% end %>
 </div>
 <p> </p>
