@@ -8,9 +8,6 @@ class Product < ActiveRecord::Base
   end
 
   #def active?
-    #where('active = ?', false)
-    #where(active: true)
-    #self.active = false
     #active == true
   #end
 
@@ -27,7 +24,6 @@ class Product < ActiveRecord::Base
         amount = forty
       end
     end
-
 
   #def calculate_price
   #    nada = price
