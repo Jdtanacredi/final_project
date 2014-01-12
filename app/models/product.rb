@@ -6,6 +6,12 @@ class Product < ActiveRecord::Base
     where('expired_at < ?', Time.now)
   end
 
+  def self.expired?
+    #where('active = ?', false)
+    #where(active: true)
+    self.active = false
+  end
+
   def calculate_final_price
       nada = price
       forty = price - (price * 0.40)
@@ -34,11 +40,6 @@ class Product < ActiveRecord::Base
   #      @amount = forty
   #    end
   #  end
-
-
-  def expired?
-    self.active = false
-  end
 
   #1.!!! class method (Product.method) to find all expired and active products ##LOOK UP SCOPES
   #2.!!! with that array of products, loop over the array
