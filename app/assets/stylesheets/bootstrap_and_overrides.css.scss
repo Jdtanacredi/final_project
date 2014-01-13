@@ -1,14 +1,27 @@
-$navbar-default-brand-color: #3c3c1d;
+//$navbar-default-brand-color: #3c3c1d;
 $body-bg: white;
 //$brand-primary: #2b46e6;
 $btn-primary-color: #f4efdd;
-$navbar-default-color: #586575;
+
 .carousel-inner > .item > img { margin: 0 auto; }
 .carousel-inner {
-  height: 500px;
+  max-height: 460px;
 }
 @import 'bootstrap';
+//$navbar-default-color: #586575;
+
+.navbar {
+  background-color: #586575;
+  color: #989ca1;
+}
 
 #radio {
   background-color: #323232;
+}
+
+.new-arrivals {
+  height: 50px;
+  //background-color: #333333 ;
+  color: white;
+  vertical-align: center;
 }
