@@ -39,7 +39,7 @@
         data-amount=<%= (@product.price * 100).to_i %>>
      </script>
     <% @product.skus.each do |sku| %>
-          <label class="btn btn-primary" id="radio"><%= label_tag :size, sku.size %>
+          <label class="btn btn-primary" id="radio"><%= label_tag :size, sku.size.upcase %>
           <%= radio_button_tag :size, sku.size %></label>
     <% end %>
     <%= hidden_field_tag :product_id, @product.id %>

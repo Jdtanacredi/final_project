@@ -1,4 +1,5 @@
 FinalProject::Application.routes.draw do
+  get "orders/index"
   root 'store#index'#, as: 'store'
   devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout'}
 
@@ -12,4 +13,5 @@ FinalProject::Application.routes.draw do
   resources :products, only: [:index, :show]
   resources :store, only: [:index, :show]
   resources :charges, only: [:create]
+  resources :orders, only: [:index, :show]
 end

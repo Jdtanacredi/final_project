@@ -1,14 +1,13 @@
 //$navbar-default-brand-color: #3c3c1d;
-$body-bg: white;
+//$body-bg: white;
 //$brand-primary: #2b46e6;
-$btn-primary-color: #f4efdd;
+//$btn-primary-color: #f4efdd;
 
 .carousel-inner > .item > img { margin: 0 auto; }
 .carousel-inner {
   max-height: 460px;
 }
 @import 'bootstrap';
-//$navbar-default-color: #586575;
 
 .navbar {
   //background-color: #586575;
@@ -17,6 +16,7 @@ $btn-primary-color: #f4efdd;
 
 #radio {
   background-color: #323232;
+  height: 32px;
 }
 
 .new-arrivals {
@@ -24,4 +24,8 @@ $btn-primary-color: #f4efdd;
   //background-color: #333333 ;
   color: white;
   vertical-align: center;
+}
+
+.btn-danger {
+  //text-color: #ffffff;
 }
