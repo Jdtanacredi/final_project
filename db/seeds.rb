@@ -10,17 +10,17 @@
 #Product.create title: 'Blue Blazer - Test Product', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', image_url: "test3.jpg", price: 180.00, expired_at: nil, active: true
 
 
-Sku.create sku_number: '1', size: 'xs', color: 'test', product_id: '7'
-Sku.create sku_number: '2', size: 's', color: 'test', product_id: '7'
-Sku.create sku_number: '3', size: 'm', color: 'test', product_id: '7'
-Sku.create sku_number: '4', size: 'l', color: 'test', product_id: '7'
-#
-Sku.create sku_number: '5', size: 'xs', color: 'test', product_id: '8'
-Sku.create sku_number: '6', size: 's', color: 'test', product_id: '8'
-Sku.create sku_number: '7', size: 'm', color: 'test', product_id: '8'
-Sku.create sku_number: '8', size: 'l', color: 'test', product_id: '8'
-#
-Sku.create sku_number: '9', size: 'xs', color: 'test', product_id: '9'
-Sku.create sku_number: '10', size: 's', color: 'test', product_id: '9'
-Sku.create sku_number: '11', size: 'm', color: 'test', product_id: '9'
-Sku.create sku_number: '12', size: 'l', color: 'test', product_id: '9'
+#Sku.create sku_number: '1', size: 'xs', color: 'test', product_id: '7'
+#Sku.create sku_number: '2', size: 's', color: 'test', product_id: '7'
+#Sku.create sku_number: '3', size: 'm', color: 'test', product_id: '7'
+#Sku.create sku_number: '4', size: 'l', color: 'test', product_id: '7'
+##
+#Sku.create sku_number: '5', size: 'xs', color: 'test', product_id: '8'
+#Sku.create sku_number: '6', size: 's', color: 'test', product_id: '8'
+#Sku.create sku_number: '7', size: 'm', color: 'test', product_id: '8'
+#Sku.create sku_number: '8', size: 'l', color: 'test', product_id: '8'
+##
+#Sku.create sku_number: '9', size: 'xs', color: 'test', product_id: '9'
+#Sku.create sku_number: '10', size: 's', color: 'test', product_id: '9'
+#Sku.create sku_number: '11', size: 'm', color: 'test', product_id: '9'
+#Sku.create sku_number: '12', size: 'l', color: 'test', product_id: '9'
