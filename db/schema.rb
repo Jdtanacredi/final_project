@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140109222306) do
+ActiveRecord::Schema.define(version: 20140118035457) do
 
   create_table "orders", force: true do |t|
     t.integer  "sku_id"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20140109222306) do
     t.string   "customer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "product_id"
+    t.boolean  "counted",     default: false
   end
 
   create_table "products", force: true do |t|

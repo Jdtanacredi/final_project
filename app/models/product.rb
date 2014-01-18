@@ -20,8 +20,10 @@ class Product < ActiveRecord::Base
         amount = nada
       elsif orders.count.between?(10, 30)
         amount = twenty
+        orders.update_attribute(:counted, true)
       else
         amount = forty
+        orders.update_attribute(:counted, true)
       end
     end
 
