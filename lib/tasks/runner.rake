@@ -1,7 +1,7 @@
 namespace :runner do
   desc 'price check'
   task :calculate_price => :environment do
-    products = Product.all
+    products = Product.all.where(:counted => false)
     products.each do |product|
       price = product.calculate_final_price
       product.update_attribute(:price, price)

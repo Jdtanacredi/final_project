@@ -9,5 +9,10 @@ class Order < ActiveRecord::Base
           :currency => "usd",
           :customer => customer_id
       )
-    end
+  end
+
+  def self.search_for(query)
+    where('id LIKE :query OR sku_id LIKE :query OR user.title', query:  "#{query}%")
+  end
+
 end
