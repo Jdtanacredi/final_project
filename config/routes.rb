@@ -1,6 +1,7 @@
 FinalProject::Application.routes.draw do
   get "orders/index"
   root 'store#index'#, as: 'store'
+  get "search", to: "search#index"
   devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout'}
 
   get 'charges/create'
