@@ -1,7 +1,7 @@
 class Order < ActiveRecord::Base
   belongs_to :user
   belongs_to :sku
-  validates_presence_of :sku
+  validates_presence_of :sku, :user
 
   def charge(price)
       Stripe::Charge.create(

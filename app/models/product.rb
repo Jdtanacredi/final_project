@@ -1,6 +1,7 @@
 class Product < ActiveRecord::Base
   has_many :skus
   has_many :orders, through: :skus
+  validates_presence_of :price, :title, :description, :image_url
   scope :active, -> { where(active: true) }
 
   def self.expired_and_active
