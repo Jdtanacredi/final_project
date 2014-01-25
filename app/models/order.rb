@@ -9,6 +9,7 @@ class Order < ActiveRecord::Base
           :currency => "usd",
           :customer => customer_id
       )
+    #self.update_attribute(:counted, true)
   end
 
   def self.search_for(query)

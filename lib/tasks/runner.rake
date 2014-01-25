@@ -16,6 +16,7 @@ namespace :runner do
         product.update_attribute(:price, price)
         product.orders.each do |order|
           order.charge(price)
+          order.update_attribute(:charged, true)
           product.update_attribute(:active, false)
       end
     end

@@ -13,6 +13,14 @@ class ChargesController < ApplicationController
          quantity: '1',
          customer_id: customer.id
     )
+    user = User.update(
+        name: params[:stripeBillingName],
+        street: params[:stripeBillingAddressLine1],
+        city: params[:stripeBillingAddressCity],
+        zip: params[:stripeBillingAddressZip],
+        state: params[:stripeBillingAddressState],
+        country: params[:stripeBillingAddressCountry]
+    )
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
