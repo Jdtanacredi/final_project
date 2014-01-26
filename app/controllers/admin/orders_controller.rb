@@ -21,9 +21,4 @@ class Admin::OrdersController < AdminsController
       redirect_to admin_orders_path
   end
 
-  def ship
-    @orders = Order.all.where(:charged => true)
-  end
-
-
 end

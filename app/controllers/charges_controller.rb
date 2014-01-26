@@ -13,7 +13,7 @@ class ChargesController < ApplicationController
          quantity: '1',
          customer_id: customer.id
     )
-    user = User.update(
+    user = current_user.update(
         name: params[:stripeBillingName],
         street: params[:stripeBillingAddressLine1],
         city: params[:stripeBillingAddressCity],

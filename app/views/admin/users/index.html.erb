@@ -10,6 +10,7 @@
     <tr>
       <td><%= user.email %></td>
       <td><%= user.admin %></td>
+      <td><%= button_to 'Destroy', admin_user_path(user), method: :delete %></td>
     </tr>
   </tbody>
   <% end %>

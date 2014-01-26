@@ -1,4 +1,5 @@
 FinalProject::Application.routes.draw do
+  get "shipping/index"
   get "orders/index"
   root 'store#index'#, as: 'store'
   get "search", to: "search#index"
@@ -8,8 +9,9 @@ FinalProject::Application.routes.draw do
   namespace :admin do
     resources :products
     resources :skus
-    resources :users, only: [:index]
+    resources :users
     resources :orders
+    resources :shipping, only: [:index, :show]
   end
   resources :products, only: [:index, :show]
   resources :store, only: [:index, :show]
