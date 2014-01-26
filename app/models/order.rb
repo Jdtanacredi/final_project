@@ -3,6 +3,10 @@ class Order < ActiveRecord::Base
   belongs_to :sku
   validates_presence_of :sku, :user
 
+  def self.shipped
+    where('shipped == ?', true)
+  end
+
   def charge(price)
       Stripe::Charge.create(
           :amount   => (price * 100).floor,
