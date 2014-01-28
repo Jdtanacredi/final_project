@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140126180554) do
+ActiveRecord::Schema.define(version: 20140128032858) do
 
   create_table "orders", force: true do |t|
     t.integer  "sku_id"
@@ -34,7 +34,8 @@ ActiveRecord::Schema.define(version: 20140126180554) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.datetime "expired_at"
-    t.boolean  "active",      default: true
+    t.boolean  "active",         default: true
+    t.decimal  "starting_price"
   end
 
   create_table "skus", force: true do |t|
