@@ -5,9 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-#Product.create title: 'Sweater - Test Product', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', image_url: "test1.jpg", price: 80.00, expired_at: nil, active: true
-#Product.create title: 'Brown Blazer - Test Product', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', image_url: "test2.jpg", price: 150.00, expired_at: nil, active: true
-#Product.create title: 'Blue Blazer - Test Product', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', image_url: "test3.jpg", price: 180.00, expired_at: nil, active: true
+#Product.create title: 'Sweater - Test Product', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', image_url: "test1.jpg", price: 80.00, starting_price: 80.00, expired_at: nil, active: true
+#Product.create title: 'Brown Blazer - Test Product', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', image_url: "test2.jpg", price: 150.00, starting_price: 150.00, expired_at: nil, active: true
+#Product.create title: 'Blue Blazer - Test Product', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', image_url: "test3.jpg", price: 180.00, starting_price: 180.00, expired_at: nil, active: true
 
 
 #Sku.create sku_number: '1', size: 'xs', color: 'test', product_id: '7'

@@ -4,6 +4,8 @@ class Admin::UsersController < AdminsController
   end
 
   def show
+    @users
+    binding.pry
   end
 
   def destroy
