@@ -13,9 +13,9 @@ module Clockwork
   #   puts "Running #{job}, at #{time}"
   # end
   every(1.hour, 'price_check', tz: EST) do
-    products = Product.all
+    products = Product.all.where(:counted => false)
     products.each do |product|
-      price = product.calculate_price
+      price = product.calculate_final_price
       product.update_attribute(:price, price)
     end
   end
@@ -27,9 +27,9 @@ module Clockwork
       product.update_attribute(:price, price)
       product.orders.each do |order|
         order.charge(price)
+        order.update_attribute(:charged, true)
         product.update_attribute(:active, false)
       end
     end
   end
-
 end
