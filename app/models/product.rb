@@ -8,10 +8,6 @@ class Product < ActiveRecord::Base
     where('expired_at < ?', Time.now).active
   end
 
-  #def active?
-    #active == true
-  #end
-
   def calculate_final_price
       nada = price
       forty = price - (price * 0.40)

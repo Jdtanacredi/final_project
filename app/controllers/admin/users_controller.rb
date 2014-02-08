@@ -5,7 +5,6 @@ class Admin::UsersController < AdminsController
 
   def show
     @users
-    binding.pry
   end
 
   def destroy
