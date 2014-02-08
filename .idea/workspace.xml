@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63d7fbe3-7387-4b1d-aef1-9bcbffcc4699" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/clock.rb" afterPath="$PROJECT_DIR$/lib/clock.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/shipping/index.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/shipping/index.html.erb" />
     </list>
     <ignored path="final_project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,10 +106,10 @@
     <splitter split-orientation="vertical" split-proportion="0.49630722">
       <split-first>
         <leaf>
-          <file leaf-file-name="runner.rake" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="runner.rake" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/tasks/runner.rake">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="0" selection-start="353" selection-end="720" vertical-scroll-proportion="0.41284403">
+                <state line="23" column="3" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -142,10 +142,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="27" column="9" selection-start="714" selection-end="714" vertical-scroll-proportion="0.42553192">
                   <folding />
                 </state>
               </provider>
@@ -173,10 +173,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/admin/shipping/index.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="7" selection-start="192" selection-end="197" vertical-scroll-proportion="0.0">
+                <state line="5" column="20" selection-start="98" selection-end="98" vertical-scroll-proportion="0.1768868">
                   <folding />
                 </state>
               </provider>
@@ -194,7 +194,7 @@
           <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/admin/orders/show.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+                <state line="1" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="-0.625">
                   <folding />
                 </state>
               </provider>
@@ -204,15 +204,6 @@
             <entry file="file://$PROJECT_DIR$/db/schema.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="33" column="27" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="clock.rb" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/clock.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="5" selection-start="545" selection-end="545" vertical-scroll-proportion="0.35791758">
                   <folding />
                 </state>
               </provider>
@@ -239,11 +230,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/users/index.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/order.rb" />
-        <option value="$PROJECT_DIR$/app/views/admin/shipping/index.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20140126180554_add_shipped_to_orders.rb" />
         <option value="$PROJECT_DIR$/app/models/product.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140109222306_add_active_to_products.rb" />
@@ -255,6 +244,8 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/charges_controller.rb" />
         <option value="$PROJECT_DIR$/lib/clock.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin/shipping/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       </list>
     </option>
   </component>
@@ -938,13 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="17" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
@@ -955,34 +939,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/product.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="5" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/shipping/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="192" selection-end="197" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/order.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/orders/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="27" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1008,16 +964,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/runner.rake">
+    <entry file="file://$PROJECT_DIR$/lib/clock.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="353" selection-end="720" vertical-scroll-proportion="0.41284403">
+        <state line="20" column="5" selection-start="545" selection-end="545" vertical-scroll-proportion="0.35791758">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/clock.rb">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="545" selection-end="545" vertical-scroll-proportion="0.35791758">
+        <state line="33" column="27" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/orders/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/order.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/shipping/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="20" selection-start="98" selection-end="98" vertical-scroll-proportion="0.1768868">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tasks/runner.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="3" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="9" selection-start="714" selection-end="714" vertical-scroll-proportion="0.42553192">
           <folding />
         </state>
       </provider>

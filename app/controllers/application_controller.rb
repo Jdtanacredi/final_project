@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :current_or_guest_user
 
-  #NEW CODE--------------------------------------------------
+
   def current_or_guest_user
     if current_user
       if session[:guest_user_id]
