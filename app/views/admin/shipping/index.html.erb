@@ -14,7 +14,15 @@
         <td><%= order.user.email %></td>
         <td><%= order.user.name %></td>
         <td><%= order.user.street%> <%= order.user.city%>, <%= order.user.state %> <%= order.user.zip %></td>
-    </tr>
+        <%= form_tag admin_stamps_path do %>
+        <td></td>
+            <%= hidden_field_tag :name, order.user.name %>
+            <%= hidden_field_tag :street, order.user.street %>
+            <%= hidden_field_tag :city, order.user.city %>
+            <%= hidden_field_tag :state, order.user.state %>
+            <%= hidden_field_tag :zip, order.user.zip %>
+            <% end %>
+      </tr>
   </tbody>
     <% end %>
     <% end %>

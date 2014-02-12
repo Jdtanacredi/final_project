@@ -12,6 +12,7 @@ FinalProject::Application.routes.draw do
     resources :users
     resources :orders
     resources :shipping, only: [:index, :show]
+    resources :stamps, only: [:create]
   end
   resources :products, only: [:index, :show]
   resources :store, only: [:index, :show]
