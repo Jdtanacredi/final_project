@@ -15,7 +15,7 @@
         <td><%= order.user.name %></td>
         <td><%= order.user.street%> <%= order.user.city%>, <%= order.user.state %> <%= order.user.zip %></td>
         <%= form_tag admin_stamps_path do %>
-        <td></td>
+        <td><label class="btn btn-primary">Print</label></td>
             <%= hidden_field_tag :name, order.user.name %>
             <%= hidden_field_tag :street, order.user.street %>
             <%= hidden_field_tag :city, order.user.city %>
