@@ -1,6 +1,8 @@
 class Admin::StampsController < AdminsController
 
   def create
+    standardized_address = "#{name} #{street} #{city} #{state} #{zip}"
+
     stamp = Stamps.create!(
         :tracking_number => true,
         :rate          => rates.first,
