@@ -2,6 +2,7 @@ class Order < ActiveRecord::Base
   belongs_to :user
   belongs_to :sku
   validates_presence_of :sku, :user
+  validates :sku, uniqueness: true
 
   def self.shipped
     where('shipped == ?', true)

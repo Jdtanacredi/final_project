@@ -3,6 +3,7 @@ class Product < ActiveRecord::Base
   has_many :orders, through: :skus
   scope :active, -> { where(active: true) }
   validates_presence_of :price, :title, :description, :image_url
+  validates :title, uniqueness: true
 
   def self.expired_and_active
     where('expired_at < ?', Time.now).active
