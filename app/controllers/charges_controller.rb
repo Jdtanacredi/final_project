@@ -4,14 +4,14 @@ class ChargesController < ApplicationController
     product = Product.find params[:product_id]
     customer = Stripe::Customer.create(
         :email => params[:stripeEmail],
-        :card  => params[:stripeToken]
+        :card => params[:stripeToken]
     )
 #binding.pry
     order = Order.create(
-         user_id: current_user.id,
-         sku_id: product.skus.find_by(size: params[:size]).id,
-         quantity: '1',
-         customer_id: customer.id
+        user_id: current_user.id,
+        sku_id: product.skus.find_by(size: params[:size]).id,
+        quantity: '1',
+        customer_id: customer.id
     )
     user = current_user.update_attributes(
         name: params[:stripeBillingName],

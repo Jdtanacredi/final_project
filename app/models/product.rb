@@ -10,19 +10,19 @@ class Product < ActiveRecord::Base
   end
 
   def calculate_final_price
-      nada = price
-      forty = price - (price * 0.40)
-      twenty = price - (price * 0.20)
+    nada = price
+    forty = price - (price * 0.40)
+    twenty = price - (price * 0.20)
 
-      if orders.count < 10
-        amount = nada
-      elsif orders.count.between?(10, 30)
-        amount = twenty
-        orders.update_attribute(:counted, true)
-      else
-        amount = forty
-        orders.update_attribute(:counted, true)
-      end
+    if orders.count < 10
+      amount = nada
+    elsif orders.count.between?(10, 30)
+      amount = twenty
+      orders.update_attribute(:counted, true)
+    else
+      amount = forty
+      orders.update_attribute(:counted, true)
     end
+  end
 
 end
